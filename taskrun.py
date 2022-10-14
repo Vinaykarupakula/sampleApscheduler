@@ -11,7 +11,7 @@ def myjob():
 def myjob2():
     print("this is another job named job2", datetime.now())
 
-
+#scheduler 1 added here
 scheduler = BlockingScheduler()
 # scheduler = BackgroundScheduler()
 scheduler.add_job(func=myjob, trigger='interval', seconds=5, id = 'my custom task')

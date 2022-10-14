@@ -17,7 +17,7 @@ scheduler = BlockingScheduler()
 scheduler.add_job(func=myjob, trigger='interval', seconds=5, id = 'my custom task')
 
 
-
+#This is the 2nd sceduler 
 scheduler.add_job(func=myjob2, trigger='interval', seconds = 6, id = 'my custom task 2')
 scheduler.start()
 time.sleep(2)
